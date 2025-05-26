@@ -1,7 +1,13 @@
+import CompanionForm from "@/components/companion-form";
+
 export default function Page() {
     return(
-        <div>
-            
-        </div>
+        <main className="min-lg:w-1/3 min-md:w-2/3 items-center justify-center">
+            <article className="w-full gap-3 flex flex-col">
+                <h1>Companion Builder</h1>
+
+                <CompanionForm />
+            </article>
+        </main>
     )
 }
