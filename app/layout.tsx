@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import Navbar from "@/components/navbar";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -23,7 +24,8 @@ export default function RootLayout({
       <html lang="en">
         <body
           className={`${bricolage.variable} antialiased`}
-          >
+        >
+          <Navbar />
           {children}
         </body>
       </html>
