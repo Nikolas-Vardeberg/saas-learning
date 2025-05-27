@@ -11,8 +11,6 @@ export default async function Page( { searchParams }: SearchParams) {
 
     const companions = await getCompanions({ subject, topic });
 
-    console.log(companions)
-
     return(
         <main>
             <section className="flex justify-between gap-4 max-sm:flex-col">
